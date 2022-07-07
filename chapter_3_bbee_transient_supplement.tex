@@ -1,0 +1,222 @@
+\chapter*{Supplemental information}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thesubsection}{S\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{S\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{section}{0}
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+
+\vspace*{3cm}
+{\huge Bumblebees land rapidly by robustly \\ accelerating towards the surface during \\ visually guided landings}
+\\*[0.5cm]
+{\large Pulkit Goyal, Johan L. van Leeuwen, Florian T. Muijres}
+\clearpage
+
+\section{Figures}
+\label{sec:s3_figures}
+\begin{figure}[H]
+	\centering
+	\includegraphics{figures/chapter3/figure_s01_independence_with_f}
+	\caption{\figuretitle{The effect of factor $\boldsymbol{f}$ on the results.} (A,B) The dependence of expansion-acceleration $\dot{r}_e$ (A) and mean acceleration $\overline{A}_e$ (B) on distance from the landing surface ($y_0$), step-change of relative rate of expansion required in an entry segment $\Delta r_e$, the set-point $r^*$, environmental light intensity and landing type (landing after a take-off or from a free-flight) for different factors $f$ (Equation~\ref{eq:ch03_bbee_rdot_amean_model}: $ \log(\dot{r}_e) \sim N(\alpha + \alpha_d + \alpha_a + \alpha_s + \beta_1~\log(y_{0~i,d,a,s}) + \beta_2~\textrm{MEDIUMlight}_{i,d,a,s} + \beta_3~\textrm{HIGHlight}_{i,d,a,s} + \beta_4~\textrm{fromTakeoff}_{i,d,a,s} + \beta_5~\log(\Delta r_{e~i,d,a,s}) + \beta_6~\log(r^*_{i,d,a,s}) + \beta_7~\log(y_{0~i,d,a,s})\times \log(\Delta r_{e~i,d,a,s}),~\sigma^2)$, similar equation holds for $\overline{A}_e$). The vertical bars for each coefficient indicate 95\% confidence intervals.}
+	\label{figure_s01_independence_with_f}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{figures/chapter3/figure_s02_rdot_approximation}
+	\caption{\figuretitle{During the transient phases of a landing approach, bumblebees keep the expansion acceleration $\bm{\dot{r}_e}$ approximately constant.} (A) Three examples of landing approaches in which the variation of relative rate of expansion $r$ during entry segments (blue) is fitted with time-to-touchdown $t$ using a linear regression (black). This linear regression approximates the optic expansion acceleration with a constant value. The constant-$r$ segment is shown in red and the black arrow indicates the variation of abscissa data as a bumblebee approaches the landing disc. (d) The goodness of fit of the linear regression model for all identified transient phases, in the six experimental conditions, as defined by the coefficient of determination ($R^2$). At each condition, we show a box plot and the coefficient of determination ($R^2$) at all transient phases (dots). The median coefficient of determination is above $0.98$ in all tested treatments.}
+	\label{figure_s02_rdot_approximation}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{figures/chapter3/figure_s03_sysid_params}
+	\caption{\figuretitle{The parameters identified using system identification.} (a) Gain $K$, (b) natural frequency $w$ and (c) damping ratio $D$. For each treatment, the data from different landing types (landings initiated from free-flight or take-off) are shown together. The blue box indicates interquartile range, and black lines indicate the maximum and minimum, respectively. The values that lie $1.5$ times the interquartile range away from the top or the bottom of the blue box are labelled as outliers (Low (L), medium (M) and high (H) light conditions, checkerboard (+) and spoke (x) landing patterns).}
+	\label{figure_s03_sysid_params}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{figures/chapter3/figure_s04_amean}
+	\caption{\figuretitle{The variation of instantaneous acceleration $\bm{A(t)}$ during entry segments with the set-point of relative rate of expansion $\bm{r^*}$ and landing type (landing from a free-flight or after take-off).} The data plotted here corresponds to 2,620 entry segments in which bumblebees exhibited positive mean acceleration ($\overline{A}_e > 0$).}
+	\label{figure_s04_amean}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{figures/chapter3/figure_s05_rdot_freeflight}
+	\caption{\figuretitle{The depiction of how bumblebees modulate their sensorimotor control response $\bm{\dot{r}_e}$ in different light conditions when they landed from free-flight.} (A) Effect of required step-change in relative rate of expansion in an entry segment $\Delta r_e$ and distance from the landing platform $y_0$ on $\dot{r}_e$, data points are shown for $r^* \in [2.28,3.28]~s^{-1}$, solid curves depict statistical model output, and are plotted for $r^*=2.78~s^{-1}$ (the median value). (B) Effect of set-point of relative rate of expansion $r^*$ on $\dot{r}_e$, data points are plotted for $\Delta r_e \in [1.28, 2.08]~s^{-1}$ and $y_0 \in [0.18, 0.24]~m$ (these intervals are centered around their median values). See Table~\ref{tb:ch03_rdot_modulation} for statistical model output. (A,B) Top, middle and bottom panels correspond to low, medium and high light conditions, respectively.}
+	\label{figure_s05_rdot_freeflight}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{figures/chapter3/figure_s05_rdot_hastakeoff}
+	\caption{\figuretitle{The depiction of how bumblebees modulate their sensorimotor control response $\bm{\dot{r}_e}$ in different light conditions when they landed after take-off.} (A) Effect of required step-change in relative rate of expansion in an entry segment $\Delta r_e$ and distance from the landing platform $y_0$ on $\dot{r}_e$, data points are shown for $r^* \in [2.28,3.28]~s^{-1}$, solid curves depict statistical model output, and are plotted for $r^*=2.78~s^{-1}$ (the median value). (B) Effect of set-point of relative rate of expansion $r^*$ on $\dot{r}_e$, data points are plotted for $\Delta r_e \in [1.28, 2.08]~s^{-1}$ and $y_0 \in [0.18, 0.24]~m$ (these intervals are centered around their median values). See Table~\ref{tb:ch03_rdot_modulation} for statistical model output. (A,B) Top, middle and bottom panels correspond to low, medium and high light conditions, respectively.}
+	\label{figure_s05_rdot_hastakeoff}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{figures/chapter3/figure_s06_amean_freeflight}
+	\caption{\figuretitle{The depiction of how bumblebees modulate their mean acceleration $\bm{\overline{A}_e}$ during an entry segment in different light conditions when they landed from free-flight.} (A) Effect of required step-change in relative rate of expansion in an entry segment $\Delta r_e$ and distance from the landing platform $y_0$ on $\overline{A}_e$, data points are shown for $r^* \in [2.28,3.28]~s^{-1}$, solid curves depict statistical model output, and are plotted for $r^*=2.78~s^{-1}$ (the median value). (B) Effect of set-point of relative rate of expansion $r^*$ on $\dot{r}_e$, data points are plotted for $\Delta r_e \in [1.28, 2.08]~s^{-1}$ and $y_0 \in [0.18, 0.24]~m$ (these intervals are centered around their median values). See Table~\ref{tb:ch03_amean_modulation} for statistical model output. (A,B) Top, middle and bottom panels correspond to low, medium and high light conditions, respectively.}
+	\label{figure_s06_amean_freeflight}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{figures/chapter3/figure_s06_amean_hastakeoff}
+	\caption{\figuretitle{The depiction of how bumblebees modulate their mean acceleration $\bm{\overline{A}_e}$ during an entry segment in different light conditions when they landed after take-off.} (A) Effect of required step-change in relative rate of expansion in an entry segment $\Delta r_e$ and distance from the landing platform $y_0$ on $\overline{A}_e$, data points are shown for $r^* \in [2.28,3.28]~s^{-1}$, solid curves depict statistical model output, and are plotted for $r^*=2.78~s^{-1}$ (the median value). (B) Effect of set-point of relative rate of expansion $r^*$ on $\dot{r}_e$, data points are plotted for $\Delta r_e \in [1.28, 2.08]~s^{-1}$ and $y_0 \in [0.18, 0.24]~m$ (these intervals are centered around their median values). See Table~\ref{tb:ch03_amean_modulation} for statistical model output. (A,B) Top, middle and bottom panels correspond to low, medium and high light conditions, respectively.}
+	\label{figure_s06_amean_hastakeoff}
+\end{figure}
+
+
+
+\newpage
+\section{Tables}
+\label{sec:s3_tables}
+%Table SX for variation in number of entry segments with factor f
+
+\begin{table}[H]\centering
+	\captionsetup{width=\textwidth, justification=justified}
+	\caption{\figuretitle{Analysis of how bumblebees modulate the expansion-acceleration ($\bm{\dot{r}_e}$) during entry segments with the starting distance from the landing surface ($\bm{y_0}$), the required step-change in relative rate of expansion ($\bm{\Delta r_e}$), the final set-point to reach ($\bm{r^*}$), light conditions and the landing type.} The data comprises of 2,651 entry segments identified in 2,511 landing maneuvers of bumblebees (statistical model as given by Equation~\ref{eq:ch03_bbee_rdot_amean_model}: 
+		$ \log(\dot{r}_{e~i,d,a,s}) \sim N(\alpha + \alpha_d + \alpha_a + \alpha_s + \beta_1~\log(y_{0~i,d,a,s}) + \beta_2~\textrm{MEDIUMlight}_{i,d,a,s} + \beta_3~\textrm{HIGHlight}_{i,d,a,s} + \beta_4~\textrm{fromTakeoff}_{i,d,a,s} + \beta_5~\log(\Delta r_{e~i,d,a,s}) + \beta_6~\log(r^*_{i,d,a,s}) + \beta_7~\log(y_{0~i,d,a,s})\times \log(\Delta r_{e~i,d,a,s}),~\sigma^2)$).}
+	\label{tb:ch03_rdot_modulation}
+	\begin{tabular}{p{3cm}CCCC}
+		\toprule
+		Fixed effect             & \text{Estimate} & \text{Std error} & \text{t value} & \text{Pr(\textgreater{}|t|)} \\
+		\midrule
+		
+		$\alpha$ & 1.35  & 0.05 & 28.24  & 1.91E-10 \\
+		$\beta_1$&-0.29 & 0.02 & -11.57 & 3.06E-30 \\
+		$\beta_2$&0.03  & 0.02 & 2.07   & 0.039    \\
+		$\beta_3$&0.10  & 0.01 & 6.55   & 7.08E-11 \\
+		$\beta_4$&-0.02 & 0.01 & -1.99  & 0.047    \\
+		$\beta_5$&-0.16 & 0.05 & -3.01  & 0.003    \\
+		$\beta_6$&0.32  & 0.03 & 12.48  & 9.43E-35 \\
+		$\beta_7$&-0.36 & 0.03 & -11.17 & 2.43E-28 \\	
+		
+		\bottomrule         
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]\centering
+	\captionsetup{width=\textwidth, justification=justified}
+	\caption{\figuretitle{Analysis of how the mean acceleration of bumblebees in an entry segment ($\bm{\overline{A}_e}$) varies with the starting distance from the landing surface ($\bm{y_0}$), the required step-change in relative rate of expansion ($\bm{\Delta r_e}$), the final set-point to reach ($\bm{r^*}$), light conditions and the landing type.} The data comprises of 2,620 entry segments identified in 2,485 landing maneuvers of bumblebees (statistical model as given by Equation~\ref{eq:ch03_bbee_rdot_amean_model}: 
+		$ \log(\overline{A}_{e~i,d,a,s}) \sim N(\alpha + \alpha_d + \alpha_a + \alpha_s + \beta_1~\log(y_{0~i,d,a,s}) + \beta_2~\textrm{MEDIUMlight}_{i,d,a,s} + \beta_3~\textrm{HIGHlight}_{i,d,a,s} + \beta_4~\textrm{fromTakeoff}_{i,d,a,s} + \beta_5~\log(\Delta r_{e~i,d,a,s}) + \beta_6~\log(r^*_{i,d,a,s}) + \beta_7~\log(y_{0~i,d,a,s})\times \log(\Delta r_{e~i,d,a,s}),~\sigma^2)$).}
+	\label{tb:ch03_amean_modulation}
+	\begin{tabular}{p{3cm}CCCC}
+		\toprule
+		Fixed effect             & \text{Estimate} & \text{Std error} & \text{t value} & \text{Pr(\textgreater{}|t|)} \\
+		\midrule
+		$\alpha$ &1.77  & 0.08 & 21.42  & 3.12E-15 \\
+		$\beta_1$&0.51  & 0.05 & 11.17  & 2.38E-28 \\
+		$\beta_2$&0.04  & 0.03 & 1.54   & 0.123    \\
+		$\beta_3$&0.14  & 0.03 & 5.28   & 1.38E-07 \\
+		$\beta_4$&-0.11 & 0.02 & -5.12  & 3.37E-07 \\
+		$\beta_5$&0.42  & 0.10 & 4.20   & 2.72E-05 \\
+		$\beta_6$&-1.47 & 0.05 & -30.63 & 2.9E-176 \\
+		$\beta_7$&-0.55 & 0.06 & -9.40  & 1.12E-20 \\
+		
+		
+		\bottomrule         
+	\end{tabular}
+\end{table}
+
+%
+%\begin{table}\centering
+%	\captionsetup{width=\textwidth, justification=justified}
+%	\caption{\figuretitle{Analysis of how the landing performance of bumblebees, measured as the time ($\bm{\Delta t}$) they take to travel $\bm{0.2~m}$, varied with the environmental light conditions and the landing type (landing from take-off or free-flight).}. The data comprises of travel time of bumblebees to fly from $y = 0.25~m$ to $y = 0.05~m$ in 5,700 landing maneuvers. Post-hoc tests compare differences in travel time in the presence of different light conditions and landing types (statistical model as given by Equation~\ref{eq:ch03_travel_time_model}: $\Delta t \sim N(\alpha + \alpha_d + \alpha_s + \beta_1~\textrm{MEDIUMlight}_{i,d,s} + \beta_2~\textrm{HIGHlight}_{i,a,s} + \beta_3~\textrm{fromTakeoff}_{i,d,s},~\sigma^2)$).}
+%	\label{tb:ch03_travel_time}
+%	\begin{tabular}{p{3cm}CCCC}
+%		\toprule
+%		Fixed effect             & \text{Estimate} & \text{Std error} & \text{t value} & \text{Pr(\textgreater{}|t|)} \\
+%		\midrule
+%		$\alpha$ &0.42  & 0.01 & 42.73  & 7.04E-25 \\
+%		$\beta_1$ &-0.03 & 0.01 & -3.05  & 0.002    \\
+%		$\beta_2$ &-0.06 & 0.01 & -7.78  & 8.29E-15 \\
+%		$\beta_3$ &-0.09 & 0.01 & -16.42 & 3.45E-59 \\
+%		
+%		\\
+%		
+%		Post-hoc constrasts* in $\Delta t$ & \text{Estimate} & \text{Std error} & \text{z ratio} & \text{$p$ value} \\
+%		\midrule
+%		L F - M F & 0.03 & 0.01 & 3.05  & 0.035    \\
+%		L F - H F & 0.06 & 0.01 & 7.78  & 1.05E-13 \\
+%		L F - L T & 0.09 & 0.01 & 16.42 & 2.19E-59 \\
+%		L F - M T & 0.12 & 0.01 & 11.69 & 2.19E-30 \\
+%		L F - H T & 0.15 & 0.01 & 15.88 & 1.4E-55  \\
+%		M F - H F & 0.04 & 0.01 & 5.46  & 7.14E-07 \\
+%		M F - L T & 0.07 & 0.01 & 7.00  & 3.84E-11 \\
+%		M F - M T & 0.09 & 0.01 & 16.42 & 2.19E-59 \\
+%		M F - H T & 0.13 & 0.01 & 15.16 & 9.95E-51 \\
+%		H F - L T & 0.03 & 0.01 & 3.57  & 0.005    \\
+%		H F - M T & 0.06 & 0.01 & 6.79  & 1.67E-10 \\
+%		H F - H T & 0.09 & 0.01 & 16.42 & 2.19E-59 \\
+%		L T - M T & 0.03 & 0.01 & 3.05  & 0.035    \\
+%		L T - H T & 0.06 & 0.01 & 7.78  & 1.05E-13 \\
+%		M T - H T & 0.04 & 0.01 & 5.46  & 7.14E-07 \\
+%		
+%		\\
+%		\multicolumn{5}{l}{\multirow{1}{10cm}{*\scriptsize{Low (L), medium (M) and high (H) light conditions, free-flight (F) and take-off (T) starting conditions.}}} \\
+%		\multicolumn{5}{l}{} \\
+%		\bottomrule         
+%	\end{tabular}
+%\end{table}
+%
+
+
+
+\newpage
+\section{Supporting text}
+\label{sec:s3_text}
+
+\subsection{Statistical models}
+\label{sec:s3_text_stat_models}
+
+We developed linear mixed-effects models to find how the transient response of the sensorimotor control system of landing bumblebees ($\dot{r}_e$) and the resulting mean accelerations ($\overline{A}_e$) varied with the starting distance from the landing surface ($y_0$), the required step-change in relative rate of expansion ($\Delta r_e$), the final set-point to reach ($r^*$), landing patterns (checkerboard and spoke), environmental light intensities, and the starting condition of the landing maneuver (whether the landing is from a free-flight or after a take-off). We first constructed a full model with aforementioned variables along with their interactions as fixed factors, and with the day of the experiment, the landing approach and the landing side (whether landing disc is located on the hive side or the food source side) as random intercepts. The model dredging revealed that the landing patterns did not affect either of the response variables ($\dot{r}_e$ or $\overline{A}_e$). Moreover, among all interaction terms, only $\text{log}(y_0)\times \text{log}(\Delta r_e)$ term was found to be significant, therefore we used the following reduced model:
+\begin{equation}
+	\label{eq:ch03_bbee_rdot_amean_model}
+	\begin{array}{lll}
+		\!\!\!\!\!\! \log(\dot{r}_{e~i,d,a,s}) \sim N( \!\!\!\!\!
+		& \alpha + \alpha_d + \alpha_a + \alpha_s + \beta_1~\log(y_{0~i,d,a,s}) + \beta_2~\textrm{MEDIUMlight}_{i,d,a,s} + \\
+		&\beta_3~\textrm{HIGHlight}_{i,d,a,s} + \beta_4~\textrm{fromTakeoff}_{i,d,a,s} + \beta_5~\log(\Delta r_{e~i,d,a,s}) + \\
+		&\beta_6~\log(r^*_{i,d,a,s}) + \beta_7~\log(y_{0~i,d,a,s})\times \log(\Delta r_{e~i,d,a,s}),~\sigma^2)
+	\end{array}                                          
+\end{equation}
+where $\dot{r}_{e~i,d,a,s}$, $y_{0~i,d,a,s}$, $\Delta r_{e~i,d,a,s}$, and $r^*_{i,d,a,s}$ are the measurements from the $i$-th entry segment from $d$-th day, $a$-th landing approach and $s$-th landing side, $\alpha$ is the regression intercept for the low light intensity and free-flight starting condition (overall intercept), $\alpha_d$ is the day-specific intercept, $\alpha_a$ is the landing-approach-specific intercept, $\alpha_s$ is the landing-side-specific intercept, $\textrm{MEDIUMlight}_{i,d,a,s}$, $\textrm{HIGHlight}_{i,d,a,s}$ and $\textrm{fromTakeoff}_{i,d,a,s}$ indicate if medium light condition, high light condition and take-off starting condition are present for the $i$-th measurement from $d$-th day, $a$-th landing approach and $s$-th landing side ($0$ = no, $1$ = yes), $\beta_i~\forall i \in \{2,3,4\}$ represent differences of fixed-effects from the overall intercept, $\beta_i~\forall i \in \{1,5,6,7\}$ represent the slopes of different covariates along with an interaction, and $\sigma$ is the residual standard deviation. The similar formula holds for the mean acceleration $\overline{A}_e$ as well. The statistical outputs are given in Tables~\ref{tb:ch03_rdot_modulation} and~\ref{tb:ch03_amean_modulation}.
+
+%We also developed a statistical model to test how the landing performance of bumblebees, measured as the time ($\Delta t$) they take to travel $0.2~m$ (from $y = 0.25~m$ to $y = 0.05~m$), varied in different tested environmental conditions (light conditions and landing patterns) and the landing type (landing from take-off or free-flight). For this purpose, we first constructed a full model with light, pattern and landing type along with their interactions as fixed factors and with the day of the experiment and the landing side as random intercepts. We found that pattern did not affect the travel time. Therefore, we used the following reduced model:
+%\begin{equation}
+%	\label{eq:ch03_travel_time_model}
+%	\begin{array}{lll}
+%		\!\!\!\!\!\! \Delta t \sim N( \!\!\!\!\!
+%		& \alpha + \alpha_d + \alpha_s + \beta_1~\textrm{MEDIUMlight}_{i,d,s} + 
+%		\beta_2~\textrm{HIGHlight}_{i,a,s} + \\
+%		& \beta_3~\textrm{fromTakeoff}_{i,d,s},~\sigma^2)
+%	\end{array}                                          
+%\end{equation}
+%The statistical output for travel time in different tested conditions is given in Table~\ref{tb:ch03_travel_time}. 
+
+\subsection{Governing equations for motion at a constant expansion-acceleration}
+\label{sec:s3_text_const_rdot_motion}
+During entry segments, the motion of an animal towards the landing surface can be well approximated by a motion at a constant expansion-acceleration ($\dot{r}$). Such a motion is described by a following system of equations:
+\begin{ceqn}
+	\begin{subequations}
+		\label{eq:ch03_const_rdot_motion}
+		\begin{align}
+			V(t) & = - \frac{dy(t)}{dt} \\
+			A(t) & =  \frac{dV(t)}{dt} = \dot{r}~y(t) - \frac{V^2(t)}{y(t)} \\
+			y(t_0) & = y_0 \text{, and } V(t_0) = (r^*-\Delta r)~y_0
+		\end{align}
+	\end{subequations}
+\end{ceqn}
+where $y(t)$, $V(t)$, and $A(t)$ are the distance (in a direction normal to the landing surface), velocity and acceleration of an animal at time $t$, and $r^*$ and $\Delta r_e$ are the new set-point and the required step-change in relative rate of expansion at the moment of switching the set-point ($t_0$).
+

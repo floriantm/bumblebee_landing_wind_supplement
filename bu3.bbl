@@ -1,0 +1,32 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Baird et~al.(2013)Baird, Boeddeker, Ibbotson and
+  Srinivasan}]{Baird2013}
+\href{https://doi.org/10.1073/pnas.1314311110/}{\textbf{Baird, E., Boeddeker,
+  N., Ibbotson, M.~R. and Srinivasan, M.~V.} (2013).
+\newblock {A universal strategy for visually guided landing}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America} \textbf{110}, 18686--18691.}
+
+\bibitem[{Chang et~al.(2016)Chang, Crall and Combes}]{Chang2016}
+\href{https://doi.org/10.1242/jeb.137976}{\textbf{Chang, J.~J., Crall, J.~D.
+  and Combes, S.~A.} (2016).
+\newblock {Wind alters landing dynamics in bumblebees}.
+\newblock \emph{The Journal of Experimental Biology} \textbf{219}, 2819--2822.}
+
+\bibitem[{Straw et~al.(2011)Straw, Branson, Neumann and Dickinson}]{Straw2011}
+\href{https://doi.org/10.1098/rsif.2010.0230}{\textbf{Straw, A.~D., Branson,
+  K., Neumann, T.~R. and Dickinson, M.~H.} (2011).
+\newblock {Multi-camera Real-time Three-dimensional Tracking of Multiple Flying
+  Animals}.
+\newblock \emph{Journal of The Royal Society Interface} \textbf{8}, 395--409.}
+
+\bibitem[{Svoboda et~al.(2005)Svoboda, Martinec and Pajdla}]{Svoboda2005}
+\href{https://doi.org/10.1162/105474605774785325}{\textbf{Svoboda, T.,
+  Martinec, D. and Pajdla, T.} (2005).
+\newblock {A convenient multicamera self-calibration for virtual environments}.
+\newblock \emph{Presence: Teleoperators and Virtual Environments} \textbf{14},
+  407--422.}
+
+\end{thebibliography}

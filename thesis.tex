@@ -1,0 +1,320 @@
+\documentclass[11pt]{extbook}
+\renewcommand{\baselinestretch}{1.04}
+
+\usepackage{verbatim} % For comments
+
+\usepackage[dutch,british]{babel}
+
+% for booklet
+%\usepackage[paperheight=240mm,paperwidth=170mm,top=20mm,bottom=20mm,right=20mm,left=20mm]{geometry}
+%\usepackage[height=250mm,width=180mm,cam,noinfo,pdftex,center]{crop}
+
+%%%% Things I did for reading version%%%%%%%%%%%%
+\usepackage[paperheight=297mm,paperwidth=210mm,top=25mm,bottom=25mm,right=25mm,left=25mm]{geometry}
+%\usepackage{pdfpages}
+%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{nameref}
+\usepackage[hypertexnames=false,hidelinks,bookmarks]{hyperref}
+
+\usepackage{etoolbox}
+% Fix multiple links for references issue.
+\makeatletter
+\pretocmd{\NAT@citex}{%
+  \let\NAT@hyper@\NAT@hyper@citex
+  \def\NAT@postnote{#2}%
+  \setcounter{NAT@total@cites}{0}%
+  \setcounter{NAT@count@cites}{0}%
+  \forcsvlist{\stepcounter{NAT@total@cites}\@gobble}{#3}}{}{}
+\newcounter{NAT@total@cites}
+\newcounter{NAT@count@cites}
+\def\NAT@postnote{}
+
+% include postnote and \citet closing bracket in hyperlink
+\def\NAT@hyper@citex#1{%
+  \stepcounter{NAT@count@cites}%
+  \hyper@natlinkstart{\@citeb\@extra@b@citeb}#1%
+  \ifnumequal{\value{NAT@count@cites}}{\value{NAT@total@cites}}
+    {\ifNAT@swa\else\if*\NAT@postnote*\else%
+     \NAT@cmt\NAT@postnote\global\def\NAT@postnote{}\fi\fi}{}%
+  \ifNAT@swa\else\if\relax\NAT@date\relax
+  \else\NAT@@close\global\let\NAT@nm\@empty\fi\fi% avoid compact citations
+  \hyper@natlinkend}
+\renewcommand\hyper@natlinkbreak[2]{#1}
+
+% avoid extraneous postnotes, closing brackets
+\patchcmd{\NAT@citex}
+  {\ifNAT@swa\else\if*#2*\else\NAT@cmt#2\fi
+   \if\relax\NAT@date\relax\else\NAT@@close\fi\fi}{}{}{}
+\patchcmd{\NAT@citex}
+  {\if\relax\NAT@date\relax\NAT@def@citea\else\NAT@def@citea@close\fi}
+  {\if\relax\NAT@date\relax\NAT@def@citea\else\NAT@def@citea@space\fi}{}{}
+\makeatother
+
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{floatrow}
+\DeclareFloatSeparators{captionmargin}{\hspace{2.5mm}} 
+\usepackage{adjustbox}
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+\usepackage{pbox}
+\usepackage{wrapfig}
+\setlength{\textfloatsep}{16pt}
+\setlength{\intextsep}{16pt}
+\renewcommand{\bottomfraction}{0.7}
+\usepackage[ansinew]{inputenc}
+
+\usepackage{multirow}
+\usepackage{booktabs}
+%\usepackage{placeins}
+
+% Symbol packages
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{upgreek}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage{nccmath}
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "l" column type
+
+% Set fonts.
+\usepackage{ebgaramond}
+\usepackage{uarial}
+\usepackage[T1]{fontenc}
+\newcommand{\fakebf}{\fontfamily{mdugm}\fontseries{b}\selectfont\small}
+\DeclareTextFontCommand{\textbf}{\fakebf}
+
+% landscape package
+\usepackage{lscape}
+
+% Set captions and section title fonts.
+\usepackage[tableposition=top]{caption}
+% Declare sans-serif math version for the captions.
+\DeclareMathVersion{captionmath}
+\SetSymbolFont{operators}{captionmath}{OT1}{cmbr}{m}{n}
+\SetSymbolFont{letters}{captionmath}{OML}{cmbrm}{m}{it}
+\SetSymbolFont{symbols}{captionmath}{OMS}{cmbrs}{m}{n}
+\SetMathAlphabet\mathbf{captionmath}{OT1}{cmbr}{bx}{n}
+\SetMathAlphabet\mathsf{captionmath}{OT1}{cmbr}{m}{n}
+\SetMathAlphabet\mathit{captionmath}{OT1}{cmbr}{m}{it}
+\SetMathAlphabet\mathtt{captionmath}{OT1}{cmtl}{m}{n}
+\DeclareCaptionFont{sansmath}{\mathversion{captionmath}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Glossaries for list of symbols
+\usepackage[symbols,nogroupskip,nonumberlist,automake]{glossaries-extra}
+\makeglossaries
+
+\setlength{\glsdescwidth}{0.8\linewidth}
+\glsxtrnewsymbol[description={Front-to-back translatory optic flow in a free-flight (s$^{-1}$)}]{tof}{\ensuremath{T_{OF}}}
+\glsxtrnewsymbol[description={Set-point of front-to-back translatory optic flow in a free-flight (s$^{-1}$)}]{tofs}{\ensuremath{T^*_{OF}}}
+\glsxtrnewsymbol[description={Flight speed in a free-flight condition (m s$^{-1}$)}]{vf}{\ensuremath{V_F}}
+\glsxtrnewsymbol[description={Distance from the surface in a free-flight condition (m)}]{D}{\ensuremath{D}}
+\glsxtrnewsymbol[description={Time-to-touchdown (s)}]{t}{\ensuremath{t}}
+\glsxtrnewsymbol[description={Fit percentage}]{F}{\ensuremath{F}}
+\glsxtrnewsymbol[description={Coefficient of determination}]{R2}{\ensuremath{R^2}}
+\glsxtrnewsymbol[description={Time-to-contact parameter (s) (inverse of optical expansion rate $r$)}]{tau}{\ensuremath{\tau}}
+
+\glsxtrnewsymbol[description={Time-to-contact-rate (time derivative of time-to-contact $r$)}]{taudot}{\ensuremath{\dot{\tau}}}
+\glsxtrnewsymbol[description={Relative rate of expansion or optical expansion rate (s$^{-1}$)}]{r}{\ensuremath{r}}
+\glsxtrnewsymbol[description={Optical expansion rate at the start of the entry segment (s$^{-1}$)}]{r0}{\ensuremath{r_0}}
+\glsxtrnewsymbol[description={Initial distance from the landing platform at which the entry segment starts (m)}]{y0}{\ensuremath{y_0}}
+\glsxtrnewsymbol[description={Average approach acceleration $A$ during an entry segment (m s$^{-2}$)}]{Ameane}{\ensuremath{\overline{A}_{e}}}
+\glsxtrnewsymbol[description={Average airspeed $U_A$ during an entry segment (m s$^{-1}$)}]{UAe}{\ensuremath{\overline{U}_{A~e}}}
+\glsxtrnewsymbol[description={Change in approach velocity during an entry segment (m s$^{-1}$)}]{deltaV}{\ensuremath{\Delta V}}
+\glsxtrnewsymbol[description={Time duration of an entry segment (s)}]{deltat}{\ensuremath{\Delta t}}
+\glsxtrnewsymbol[description={Optical expansion acceleration; calculated as time derivative of optical expansion rate (s$^{-2}$)}]{rdot}{\ensuremath{\dot{r}}}
+\glsxtrnewsymbol[description={Estimate of optical expansion acceleration in an entry segment (s$^{-2}$)}]{rdote}{\ensuremath{\dot{r}_e}}
+\glsxtrnewsymbol[description={Step-change of optical expansion rate required in an entry segment (s$^{-1}$)}]{deltare}{\ensuremath{\Delta r_e}}
+\glsxtrnewsymbol[description={Temporal variation of relative rate of expansion in a combined pair of constant-$r$ and entry segments (s$^{-1}$)}]{rct}{\ensuremath{r_c(t)}}
+\glsxtrnewsymbol[description={Low-pass filtered temporal variation of relative rate of expansion in a combined pair of constant-$r$ and entry segments (s$^{-1}$)}]{rft}{\ensuremath{r_f(t)}}
+\glsxtrnewsymbol[description={Temporal variation of relative rate of expansion in a combined pair of constant-$r$ and entry segments obtained after simulating a transfer function (s$^{-1}$)}]{rst}{\ensuremath{r_s(t)}}
+\glsxtrnewsymbol[description={Set-point of relative rate of expansion or optical expansion rate; mean value of optical expansion rate in a constant-$r$ segment  (s$^{-1}$)}]{rs}{\ensuremath{r^*}}
+\glsxtrnewsymbol[description={Switch-reversal set-point of optical expansion rate (s$^{-1}$)}]{srs}{\ensuremath{r_0^*}}
+\glsxtrnewsymbol[description={Slope of linear relationship between the logarithmic transformations of the set-points of optical expansion rate $r^*$ and the mean distance to the surface $y^*$; a parameter similar to time-to-contact rate $\dot{\tau}$}]{m}{\ensuremath{m}}
+\glsxtrnewsymbol[description={Change in set-point of optical expansion rate between two consecutive constant-$r$ segments in a landing approach (s$^{-1}$)}]{deltars}{\ensuremath{\Delta r^*}}
+\glsxtrnewsymbol[description={Mean value of distance to the surface in a constant-$r$ segment  (m)}]{ys}{\ensuremath{y^*}}
+\glsxtrnewsymbol[description={Time duration during a constant-$r$ segment  (s)}]{ts}{\ensuremath{\Delta t^*}}
+\glsxtrnewsymbol[description={Mean value of approach acceleration $A$ in a constant-$r$ segment  (m s$^{-2}$)}]{As}{\ensuremath{A^*}}
+\glsxtrnewsymbol[description={Mean value of approach velocity $V$ in a constant-$r$ segment  (m s$^{-1}$)}]{Vs}{\ensuremath{V^*}}
+\glsxtrnewsymbol[description={An axis of a landing platform coordinate system; defined in a direction normal to the landing platform (m)}]{y}{\ensuremath{y}}
+\glsxtrnewsymbol[description={An axis of a landing platform coordinate system; defined in a plane parallel to the ground (m)}]{x}{\ensuremath{x}}
+\glsxtrnewsymbol[description={An axis of a landing platform coordinate system; defined in a vertically up direction (m)}]{z}{\ensuremath{z}}
+\glsxtrnewsymbol[description={Approach velocity towards the landing platform (m s$^{-1}$)}]{V}{\ensuremath{V}}
+\glsxtrnewsymbol[description={Approach acceleration towards the landing platform (m s$^{-2}$)}]{A}{\ensuremath{A}}
+\glsxtrnewsymbol[description={Three-dimensional speed at the start of the landing maneuver (m s$^{-1}$)}]{Ustart}{\ensuremath{U_{start}}}
+\glsxtrnewsymbol[description={Average flight speed between two consecutive constant-$r$ segments for a hybrid landing strategy (m s$^{-1}$)}]{UH}{\ensuremath{U_{H}}}
+\glsxtrnewsymbol[description={Average flight speed between two consecutive constant-$r$ segments for a constant-$r$ landing strategy (m s$^{-1}$)}]{Ur}{\ensuremath{U_{r}}}
+\glsxtrnewsymbol[description={Average flight speed between two consecutive constant-$r$ segments for a constant-$\dot{\tau}$ landing strategy (m s$^{-1}$)}]{Utaudot}{\ensuremath{U_{\dot{\tau}}}}
+\glsxtrnewsymbol[description={Displacement normal to the landing surface during a constant-$r$ segment (m)}]{deltay1}{\ensuremath{\Delta y_1} or \ensuremath{\Delta y^*}}
+\glsxtrnewsymbol[description={Displacement normal to the landing surface for a set of consecutive constant-$r$ segments (m)}]{deltay2}{\ensuremath{\Delta y_2}}
+\glsxtrnewsymbol[description={Threshold factor used in the set-point extraction algorithm}]{f}{\ensuremath{f}}
+\glsxtrnewsymbol[description={Space-time array ($x,y,z,t$)}]{vecX}{\ensuremath{\bm{X}}}
+\glsxtrnewsymbol[description={Ground-velocity vector ($u,v,w$) or ($u_G,v_G,w_G$) in landing platform coordinate system (m s$^{-1}$)}]{vecU}{\ensuremath{\bm{U}} or \ensuremath{\bm{U_G}}}
+\glsxtrnewsymbol[description={Wind-velocity vector ($u_W,0,0$) in landing platform coordinate system (m s$^{-1}$)}]{vecUW}{\ensuremath{\bm{U_W}}}
+\glsxtrnewsymbol[description={Air-velocity vector ($u_A,v_A,w_A$) in landing platform coordinate system (m s$^{-1}$)}]{vecUA}{\ensuremath{\bm{U_A}}}
+\glsxtrnewsymbol[description={Acceleration vector ($a_x,a_y,a_z$) (m s$^{-2}$)}]{vecA}{\ensuremath{\bm{A}}}
+\glsxtrnewsymbol[description={Parameters of a gamma distribution}]{ab}{\ensuremath{a,~b}}
+\glsxtrnewsymbol[description={Probability of a bumblebee exhibiting low approach velocity phase}]{PlowV}{\ensuremath{P_{\textrm{low }V}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\captionsetup{figurename=Figure,font={scriptsize,sf,sansmath},labelfont=bf}
+
+% Make sure equation labels are always normal size, even if the equations themselves are smaller.
+\makeatletter
+\def\maketag@@@#1{\hbox{\m@th\normalfont\normalsize#1}}
+\makeatother
+
+% Format headings.
+\usepackage[noindentafter]{titlesec}
+% Fix bug
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+\titleformat{\chapter}{\vspace{-50pt}\Huge}{\thechapter}{4mm}{\Huge\vspace{-30pt}}
+
+\titleformat{\section}{\normalfont\sffamily\Large\bfseries}{\thesection}{4mm}{}
+\titlespacing{\section}{0pt}{11pt plus 6pt minus 2pt}{6pt plus 0pt minus 0pt}
+\titleformat{\subsection}{\normalfont\sffamily\large\bfseries}{\thesubsection}{3mm}{}
+\titlespacing{\section}{0pt}{8pt plus 4pt minus 2pt}{6pt plus 0pt minus 0pt}
+\titleformat{\subsubsection}{\normalfont\sffamily\normalsize\bfseries}{\thesubsubsection}{3mm}{}
+\titlespacing{\section}{0pt}{8pt plus 4pt minus 2pt}{6pt plus 0pt minus 0pt}
+
+% Define \thumb command for use in the header
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{xcolor}
+
+\newcommand{\thumb}[2]{%
+\begin{tikzpicture}[remember picture,overlay]
+\fill[fill=lightgray]
+($(current page.north east) + (-10mm,-5mm) + (0,#2mm)$) 
+-- ($(current page.north east) + (5mm,-5mm) + (0,#2mm)$)
+-- ($(current page.north east) + (5mm,5mm) + (0,#2mm)$)
+-- ($(current page.north east) + (-10mm, 5mm) + (0,#2mm)$)
+-- cycle;
+\node(test) at ($(current page.north east) + (-5mm,#2mm)$){\Huge\textcolor{white}{#1}};
+\end{tikzpicture}}
+
+% Fish flickbook
+\newcommand{\fish}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node(test) at ($(current page.north west) + (10mm,-120mm)$){\includegraphics[width=20mm]{figures/flickbook/frame\thepage}};
+\end{tikzpicture}}
+%\renewcommand{\fish}{\textit{fish \thepage}}
+
+% Title page
+\newcommand{\titleimage}[1]{%
+\begin{tikzpicture}[remember picture,overlay]
+\node(test) at ($(current page.center)$){\includegraphics[width=180mm]{#1}};
+\end{tikzpicture}}
+
+% Customise headers and footers
+\usepackage{fancyhdr}
+
+\fancypagestyle{fishempty}{%
+\fancyhf{}
+\fancyhead[LE]{\fish}
+\renewcommand{\headrulewidth}{0pt}
+}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyfoot[LE,RO]{\thepage}
+
+%%%% Things I did for reading version%%%%%%%%%% remove them for final version
+%\fancyfootoffset{2.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\chapterthumb}{}
+%\newcommand{\chapterthumb}{placeholder for page thumbs}
+\fancyhead[CO]{\chapterthumb}
+%\fancyhead[LE]{\fish}
+\renewcommand{\headrulewidth}{0pt}
+
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+
+\makeatletter
+\newcommand{\cleardoublepageeven}{\clearpage\if@twoside\ifodd\c@page \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+% Remove chapter heading for chapters with a (manually defined) title page - these will be added manually later.
+\makeatletter
+\newcommand{\unchapter}[1]{%
+  \begingroup
+  %\let\ps@plain\ps@empty
+  %\let\ps@fancy\ps@empty
+  \renewcommand{\cleardoublepage}{\cleardoublepageeven}
+  \let\@makechapterhead\@gobble % make \@makechapterhead do nothing
+  \chapter{#1}
+  \endgroup
+}
+\makeatother
+
+% Make fake chapter heading for the pageref in the TOC, so we can insert empty pages for the title page.
+\makeatletter
+\newcommand{\chapterpagemark}[1]{%
+  \begingroup
+  %\let\ps@plain\ps@empty
+  %\let\ps@fancy\ps@empty
+  % Make sure our chapters start at the even page by redefining \cleardoublepage, which is used in the macro @makechapterhead.
+  \renewcommand{\cleardoublepage}{\cleardoublepageeven}
+  \let\@makechapterhead\@gobble % make \@makechapterhead do nothing
+  \chapter{#1}
+  \addtocounter{chapter}{-1}
+  \endgroup
+}
+\makeatother
+
+% Formatting commands to use in text.
+\newcommand{\figuretitle}[1]{{\bfseries #1}}
+\newcommand{\latin}{\textit}
+\newcommand{\chapterref}[2]{\mbox{\hyperref[#1]{\textbf{#2}}}}
+\newcommand{\code}[1]{{\tt #1}}
+
+% Bibliography
+\usepackage[sectionbib]{natbib}
+\usepackage{bibunits}
+\defaultbibliographystyle{jxb_links}
+\defaultbibliography{library}
+\setlength{\bibsep}{1.2mm}
+\addto{\captionsbritish}{\renewcommand{\bibname}{References}}
+
+% Math and text commands.
+\newcommand{\bmvec}[1]{\bm{\mathrm{#1}}}
+\newcommand{\swimming}{\mathrm{Sw}}
+\newcommand{\reynolds}{\mathrm{Re}}
+\newcommand{\strouhal}{\mathrm{St}}
+\newcommand{\CoT}{\mathrm{CoT}}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\T}{\mathrm{T}}
+\newcommand{\deriv}[2]{\frac{\d #1}{\d #2}}
+\newcommand{\derivn}[3]{\frac{\d^#3 #1}{\d #2^#3}}
+\newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pderivn}[3]{\frac{\partial^#3 #1}{\partial #2^#3}}
+\newcommand{\ci}{CI$_\textrm{95\%}$}
+\newcommand{\scinum}[2]{#1~\cdot~10^{#2}}
+\newcommand{\dimension}{\mathsf}
+
+
+
+% Make sure paragraphs stay together - sometimes they are stretched apart automatically.
+\setlength{\parskip}{2pt}
+
+\begin{document}
+\bibliographyunit[\chapter]
+
+
+\include{chapter_3_bbee_transient_supplement}
+
+\end{document}

@@ -1,0 +1,200 @@
+\begin{thebibliography}{29}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Baird et~al.(2013)Baird, Boeddeker, Ibbotson and
+  Srinivasan}]{Baird2013}
+\href{https://doi.org/10.1073/pnas.1314311110/}{\textbf{Baird, E., Boeddeker,
+  N., Ibbotson, M.~R. and Srinivasan, M.~V.} (2013).
+\newblock {A universal strategy for visually guided landing}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America} \textbf{110}, 18686--18691.}
+
+\bibitem[{Baird et~al.(2021)Baird, Boeddeker and Srinivasan}]{Baird2021}
+\href{https://doi.org/10.1098/rspb.2020.3051}{\textbf{Baird, E., Boeddeker, N.
+  and Srinivasan, M.~V.} (2021).
+\newblock {The effect of optic flow cues on honeybee flight control in wind}.
+\newblock \emph{Proceedings of the Royal Society B: Biological Sciences}
+  \textbf{288}, 20203051.}
+
+\bibitem[{Baird et~al.(2015)Baird, Fernandez, Wcislo and Warrant}]{Baird2015}
+\href{https://doi.org/10.3389/fphys.2015.00305}{\textbf{Baird, E., Fernandez,
+  D.~C., Wcislo, W.~T. and Warrant, E.~J.} (2015).
+\newblock {Flight control and landing precision in the nocturnal bee Megalopta
+  is robust to large changes in light intensity}.
+\newblock \emph{Frontiers in Physiology} \textbf{6}, 1--7.}
+
+\bibitem[{Balebail et~al.(2019)Balebail, Raja and Sane}]{Balebail2019}
+\href{https://doi.org/10.1371/journal.pone.0219861}{\textbf{Balebail, S., Raja,
+  S.~K. and Sane, S.~P.} (2019).
+\newblock {Landing maneuvers of houseflies on vertical and inverted surfaces}.
+\newblock \emph{PLoS ONE} \textbf{14}, 1--17.}
+
+\bibitem[{Chang et~al.(2016)Chang, Crall and Combes}]{Chang2016}
+\href{https://doi.org/10.1242/jeb.137976}{\textbf{Chang, J.~J., Crall, J.~D.
+  and Combes, S.~A.} (2016).
+\newblock {Wind alters landing dynamics in bumblebees}.
+\newblock \emph{The Journal of Experimental Biology} \textbf{219}, 2819--2822.}
+
+\bibitem[{Corbet et~al.(1993)Corbet, Fussel, Ake, Fraser, Gunson, Savage and
+  Smith}]{Corbet1993}
+\href{https://doi.org/10.1111/j.1365-2311.1993.tb01075.x}{\textbf{Corbet,
+  S.~A., Fussel, M., Ake, R., Fraser, A., Gunson, C., Savage, A. and Smith, K.}
+  (1993).
+\newblock {Temperature and the pollinating activity of social bees}.
+\newblock \emph{Ecological Entomology} \textbf{18}, 17--30.}
+
+\bibitem[{de~Croon(2016)}]{Croon2016}
+\href{https://doi.org/10.1088/1748-3190/11/1/016004}{\textbf{de~Croon, G. C.
+  H.~E.} (2016).
+\newblock {Monocular distance estimation with optical flow maneuvers and
+  efference copies: a stability-based strategy}.
+\newblock \emph{Bioinspiration {\&} Biomimetics} \textbf{11}, 016004.}
+
+\bibitem[{de~Croon et~al.(2021)de~Croon, {De Wagter} and Seidl}]{DeCroon2021}
+\href{https://doi.org/10.1038/s42256-020-00279-7}{\textbf{de~Croon, G. C.
+  H.~E., {De Wagter}, C. and Seidl, T.} (2021).
+\newblock {Enhancing optical-flow-based control by learning visual appearance
+  cues for flying robots}.
+\newblock \emph{Nature Machine Intelligence} \textbf{3}, 33--41.}
+
+\bibitem[{Edwards and Ibbotson(2007)}]{Edwards2007}
+\href{https://doi.org/10.1068/p5626}{\textbf{Edwards, M. and Ibbotson, M.~R.}
+  (2007).
+\newblock {Relative sensitivities to large-field optic-flow patterns varying in
+  direction and speed}.
+\newblock \emph{Perception} \textbf{36}, 113--124.}
+
+\bibitem[{Fontaine et~al.(2006)Fontaine, Dajoz, Meriguet and
+  Loreau}]{Fontaine2006}
+\href{https://doi.org/10.1371/journal.pbio.0040001}{\textbf{Fontaine, C.,
+  Dajoz, I., Meriguet, J. and Loreau, M.} (2006).
+\newblock {Functional diversity of plant-pollinator interaction webs enhances
+  the persistence of plant communities}.
+\newblock \emph{PLoS Biology} \textbf{4}, 0129--0135.}
+
+\bibitem[{Foster and Cartar(2011)}]{Foster2011}
+\href{https://doi.org/10.1242/jeb.051730}{\textbf{Foster, D.~J. and Cartar,
+  R.~V.} (2011).
+\newblock {What causes wing wear in foraging bumble bees?}
+\newblock \emph{Journal of Experimental Biology} \textbf{214}, 1896--1901.}
+
+\bibitem[{Gibson(1955)}]{Gibson1955}
+\href{https://doi.org/10.2307/1418538}{\textbf{Gibson, J.~J.} (1955).
+\newblock {The optical expansion-pattern in aerial locomotion}.
+\newblock \emph{The American journal of psychology} \textbf{68}, 480--484.}
+
+\bibitem[{Heinrich(1979)}]{heinrich1979}
+\href{https://doi.org/10.1007/BF00345321}{\textbf{Heinrich, B.} (1979).
+\newblock {Resource heterogeneity and patterns of movement in foraging
+  bumblebees}.
+\newblock \emph{Oecologia} \textbf{40}, 235--245.}
+
+\bibitem[{Ibbotson et~al.(2017)Ibbotson, Hung, Meffin, Boeddeker and
+  Srinivasan}]{Ibbotson2017}
+\href{https://doi.org/10.1038/s41598-017-14954-0}{\textbf{Ibbotson, M.~R.,
+  Hung, Y.~S., Meffin, H., Boeddeker, N. and Srinivasan, M.~V.} (2017).
+\newblock {Neural basis of forward flight control and landing in honeybees}.
+\newblock \emph{Scientific Reports} \textbf{7}, 1--15.}
+
+\bibitem[{{Joar Hegland} and Totland(2008)}]{JoarHegland2008}
+\href{https://doi.org/10.1111/j.2008.0030-1299.16561.x}{\textbf{{Joar Hegland},
+  S. and Totland, {\O}.} (2008).
+\newblock {Is the magnitude of pollen limitation in a plant community affected
+  by pollinator visitation and plant species specialisation levels?}
+\newblock \emph{Oikos} \textbf{0}, 080227085440234--0.}
+
+\bibitem[{Lee(1976)}]{Lee1976}
+\href{https://doi.org/10.1068/p050437}{\textbf{Lee, D.~N.} (1976).
+\newblock {A theory of visual control of braking based on information about
+  time to collision}.
+\newblock \emph{Perception} \textbf{5}, 437--459.}
+
+\bibitem[{Lee et~al.(2009)Lee, Bootsma, Land, Regan and Gray}]{Lee2009}
+\href{https://doi.org/10.1068/pmklee}{\textbf{Lee, D.~N., Bootsma, R.~J., Land,
+  M., Regan, D. and Gray, R.} (2009).
+\newblock {Lee's 1976 Paper}.
+\newblock \emph{Perception} \textbf{38}, 837--858.}
+
+\bibitem[{Lee et~al.(1993)Lee, Davies, Green and {(Ruud). Van Der
+  Weel}}]{Lee1993}
+\textbf{Lee, D.~N., Davies, M. N.~O., Green, P.~R. and {(Ruud). Van Der Weel},
+  F.~R.} (1993).
+\newblock {Visual control of velocity of approach by pigeons when landing}.
+\newblock \emph{Journal of Experimental Biology} \textbf{180}, 85--104.
+
+\bibitem[{Lee et~al.(1991)Lee, Reddish and Rand}]{Lee1991}
+\href{https://doi.org/10.1007/BF01131406}{\textbf{Lee, D.~N., Reddish, P.~E.
+  and Rand, D.~T.} (1991).
+\newblock {Aerial docking by hummingbirds}.
+\newblock \emph{Naturwissenschaften} \textbf{78}, 526--527.}
+
+\bibitem[{Muijres et~al.(2020)Muijres, van Dooremalen, Lankheet, Lugt, de~Vries
+  and {Van Langevelde}}]{Muijres2020}
+\href{https://doi.org/10.1098/rsos.201222}{\textbf{Muijres, F.~T., van
+  Dooremalen, C., Lankheet, M., Lugt, H., de~Vries, L.~J. and {Van Langevelde},
+  F.} (2020).
+\newblock {Varroa destructor infestation impairs the improvement of landing
+  performance in foraging honeybees}.
+\newblock \emph{Royal Society Open Science} \textbf{7}, 201222.}
+
+\bibitem[{Reber et~al.(2016)Reber, Dacke, Warrant and Baird}]{Reber2016}
+\href{https://doi.org/10.3389/fnbeh.2016.00174}{\textbf{Reber, T., Dacke, M.,
+  Warrant, E. and Baird, E.} (2016).
+\newblock {Bumblebees perform well-controlled landings in dim light}.
+\newblock \emph{Frontiers in Behavioral Neuroscience} \textbf{10}, 1--10.}
+
+\bibitem[{Reber et~al.(2015)Reber, V{\"{a}}h{\"{a}}kainu, Baird,
+  Weckstr{\"{o}}m, Warrant and Dacke}]{Reber2015}
+\href{https://doi.org/10.1242/jeb.113886}{\textbf{Reber, T.,
+  V{\"{a}}h{\"{a}}kainu, A., Baird, E., Weckstr{\"{o}}m, M., Warrant, E. and
+  Dacke, M.} (2015).
+\newblock {Effect of light intensity on flight control and temporal properties
+  of photoreceptors in bumblebees}.
+\newblock \emph{Journal of Experimental Biology} \textbf{218}, 1339--1346.}
+
+\bibitem[{Srinivasan et~al.(2000)Srinivasan, Zhang, Chahl, Barth and
+  Venkatesh}]{Srinivasan2000}
+\href{https://doi.org/10.1007/s004220000162}{\textbf{Srinivasan, M.~V., Zhang,
+  S.~W., Chahl, J.~S., Barth, E. and Venkatesh, S.} (2000).
+\newblock {How honeybees make grazing landings on flat surfaces}.
+\newblock \emph{Biological Cybernetics} \textbf{83}, 171--183.}
+
+\bibitem[{Straw et~al.(2011)Straw, Branson, Neumann and Dickinson}]{Straw2011}
+\href{https://doi.org/10.1098/rsif.2010.0230}{\textbf{Straw, A.~D., Branson,
+  K., Neumann, T.~R. and Dickinson, M.~H.} (2011).
+\newblock {Multi-camera Real-time Three-dimensional Tracking of Multiple Flying
+  Animals}.
+\newblock \emph{Journal of The Royal Society Interface} \textbf{8}, 395--409.}
+
+\bibitem[{Sun and Frost(1998)}]{Sun1998}
+\href{https://doi.org/10.1038/1110}{\textbf{Sun, H. and Frost, B.~J.} (1998).
+\newblock {Computation of different optical variables of looming objects in
+  pigeon nucleus rotundus neurons}.
+\newblock \emph{Nature Neuroscience} \textbf{1}, 296--303.}
+
+\bibitem[{{Van Breugel} and Dickinson(2012)}]{Vanbreugel2012}
+\href{https://doi.org/10.1242/jeb.066498}{\textbf{{Van Breugel}, F. and
+  Dickinson, M.~H.} (2012).
+\newblock {The visual control of landing and obstacle avoidance in the fruit
+  fly Drosophila melanogaster}.
+\newblock \emph{Journal of Experimental Biology} \textbf{215}, 1783--1798.}
+
+\bibitem[{Velthuis and Doorn(2006)}]{Velthuis2006}
+\textbf{Velthuis, H.~W. and Doorn, A.~V.} (2006).
+\newblock {A century of advances in bumblebee domestication and the economic
+  and environmental aspects of its commercialization for pollination}.
+\newblock \emph{Apidologie} \textbf{37}, 421--451.
+
+\bibitem[{Wagner(1982)}]{Wagner1982}
+\href{https://doi.org/10.1038/297147a0}{\textbf{Wagner, H.} (1982).
+\newblock {Flow-field variables trigger landing in flies}.
+\newblock \emph{Nature} \textbf{297}, 147--148.}
+
+\bibitem[{Wang and Frost(1992)}]{Wang1992}
+\href{https://doi.org/10.1038/356236a0}{\textbf{Wang, Y. and Frost, B.~J.}
+  (1992).
+\newblock {Time to collision is signalled by neurons in the nucleus rotundus of
+  pigeons}.
+\newblock \emph{Nature} \textbf{356}, 236--238.}
+
+\end{thebibliography}
